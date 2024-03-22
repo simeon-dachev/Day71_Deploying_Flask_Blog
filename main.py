@@ -28,7 +28,8 @@ pip3 install -r requirements.txt
 This will install the packages from the requirements.txt for this project.
 '''
 
-app = Flask(__name__, instance_path="C:/Users/Lenovo/Desktop/Udemy_courses/Python_100-day_Bootcamp/Day69_Blog_Flask_Authentication/instance")
+# app = Flask(__name__, instance_path="C:/Users/Lenovo/Desktop/Udemy_courses/Python_100-day_Bootcamp/Day69_Blog_Flask_Authentication/instance")
+app = Flask(__name__, instance_path="C:\Users\Lenovo\Desktop\Udemy_courses\Python_100-day_Bootcamp\Day69_Blog_Flask_Authentication\instance")
 app.config['SECRET_KEY'] = os.environ.get("FLASK_KEY")
 ckeditor = CKEditor(app)
 Bootstrap5(app)
